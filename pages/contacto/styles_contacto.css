@@ -1,0 +1,458 @@
+/* styles_contacto.css - Estilos específicos para la página de contacto */
+
+/* Contenido principal de contacto */
+.contact-content {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+}
+
+/* Grid principal del contacto - AHORA EN HORIZONTAL */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Contenedor horizontal para la información de contacto */
+.contact-info-horizontal {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-left: 5px solid var(--primary-gold);
+}
+
+.contact-info-horizontal h2 {
+    color: var(--primary-gold);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+/* Grid horizontal para los items de contacto */
+.contact-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Items de contacto en formato compacto */
+.contact-item-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    background: var(--light-bg);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-item-horizontal:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-gold);
+    box-shadow: 0 5px 15px rgba(238, 50, 51, 0.1);
+}
+
+.contact-icon-horizontal {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--primary-gold);
+}
+
+.contact-icon-horizontal svg {
+    color: var(--primary-gold);
+}
+
+.contact-details-horizontal h3 {
+    margin-bottom: 8px;
+    color: var(--primary-gold);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.contact-details-horizontal p {
+    color: var(--text-gold);
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Sección del formulario */
+.contact-form-section {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-left: 5px solid var(--primary-gold);
+    margin-bottom: 40px;
+}
+
+.contact-form-section h2 {
+    color: var(--primary-gold);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.contact-form-section > p {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* Estilos del formulario */
+.contact-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: black;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-gold);
+    background-color: var(--white);
+    box-shadow: 0 0 0 3px rgba(238, 50, 51, 0.1);
+    transform: translateY(-2px);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botón del formulario */
+.contact-form .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    background: var(--primary-gold);
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(238, 50, 51, 0.3);
+    transition: all ease 0.8s;
+    background: green;
+}
+
+/* Contacto de emergencia*/
+.emergency-contact-compact {
+    background: #e7a7a7;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-gold);
+    margin-top: 25px;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.emergency-contact-compact h3 {
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.emergency-contact-compact p {
+    color: var(--text-light);
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+.emergency-phone-compact {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-dark);
+    background: var(--white);
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Ubicación de oficinas */
+.office-location {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.office-location h2 {
+    color: var(--primary-gold);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.office-image {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.location-details {
+    text-align: center;
+}
+
+.location-details h3 {
+    margin-bottom: 15px;
+    color: var(--primary-gold);
+    font-size: 1.5rem;
+}
+
+.location-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.feature {
+    padding: 15px;
+    background: var(--light-bg);
+    border-radius: 8px;
+    text-align: center;
+    border-left: 3px solid var(--primary-gold);
+}
+
+.feature strong {
+    color: var(--primary-gold);
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Sección de cobertura */
+.coverage-section {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.coverage-section h2 {
+    color: var(--primary-gold);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.coverage-section > p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--text-light);
+}
+
+.coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.coverage-zone {
+    padding: 20px;
+    background: var(--light-bg);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-gold);
+    transition: transform 0.3s ease;
+}
+
+.coverage-zone:hover {
+    transform: translateY(-3px);
+}
+
+.coverage-zone h3 {
+    color: var(--primary-gold);
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.coverage-zone ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coverage-zone li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    color: var(--text-gold);
+    position: relative;
+    padding-left: 15px;
+    font-size: 0.9rem;
+}
+
+.coverage-zone li:before {
+    content: "•";
+    color: var(--primary-gold);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.coverage-zone li:last-child {
+    border-bottom: none;
+}
+
+/* Estados de validación del formulario */
+.form-group input:valid(:placeholder-shown) {
+    border-color: black;
+}
+
+.form-group input:not(:placeholder-shown) {
+    border-color: black;
+}
+
+.form-group input:invalid(:placeholder-shown) {
+    border-color: var(--primary-gold);
+}
+/* Media Queries para responsividad */
+@media (min-width: 768px) {
+    .contact-items-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .contact-info-horizontal {
+        padding: 40px;
+    }
+    
+    .contact-form .btn {
+        width: auto;
+        min-width: 200px;
+    }
+    
+    .emergency-contact-compact {
+        margin-top: 30px;
+        padding: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-content .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-grid {
+        margin-bottom: 40px;
+    }
+    
+    .contact-items-grid {
+        gap: 30px;
+    }
+    
+    .contact-item-horizontal {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-info-horizontal,
+    .contact-form-section,
+    .office-location,
+    .coverage-section {
+        padding: 25px 20px;
+    }
+    
+    .contact-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .contact-item-horizontal {
+        padding: 15px 10px;
+    }
+    
+    .contact-icon-horizontal {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .contact-details-horizontal h3 {
+        font-size: 1rem;
+    }
+    
+    .contact-details-horizontal p {
+        font-size: 0.85rem;
+    }
+    
+    .emergency-phone-compact {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+    
+    .coverage-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-items-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .contact-item-horizontal {
+        padding: 20px 15px;
+    }
+}
+
+/* Efectos de hover mejorados */
+.contact-item-horizontal:hover .contact-icon-horizontal {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para el placeholder personalizado */
+.contact-form-section .placeholder {
+    background: linear-gradient(135deg, #f7fafc 0%, #e2e8f0 100%);
+    border: 2px dashed #cbd5e0;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+/* Mejoras de accesibilidad */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--primary-gold);
+    outline-offset: 2px;
+}
